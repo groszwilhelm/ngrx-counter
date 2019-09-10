@@ -1,3 +1,11 @@
-<p>
-  Current no: {{ countNumber }}
-</p>
+<div class="card w-25">
+  <div class="card-body">
+    Current no: {{ countNumber }}
+  </div>
+
+  <div class="card-footer">
+    <button class="btn btn-success" (click)="increment(1)"> Increment </button>
+    <button class="btn btn-danger" (click)="decrement(1)"> Decrement </button>
+  </div>
+</div>
+
