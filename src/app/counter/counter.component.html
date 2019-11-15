@@ -1,11 +1,11 @@
 <div class="card w-25">
   <div class="card-body">
-    Current no: {{ countNumber }}
+    Current no: {{ (counter.state$ | async).counter }}
   </div>
 
   <div class="card-footer">
-    <button class="btn btn-success" (click)="increment(1)"> Increment </button>
-    <button class="btn btn-danger" (click)="decrement(1)"> Decrement </button>
+    <button class="btn btn-success" (click)="counter.incrementCounter(1)"> Increment </button>
+    <button class="btn btn-danger" (click)="counter.decrementCounter(1)"> Decrement </button>
   </div>
 </div>
 

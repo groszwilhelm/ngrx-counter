@@ -6,7 +6,7 @@ const router = express.Router();
 
 app.use(bodyParser.json());
 
-let counter = 0;
+let counter = 10;
 
 router.get('/counter', (req, res) => {
   res.status(200).send({ counter });
